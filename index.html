@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      #header {
+        background-color: #a87c7c;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+        /* fix at top */
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      #header h1 {
+        display: inline;
+        margin: 0;
+      }
+
+      #header ul {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        list-style: none;
+      }
+
+      #header ul li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+    <!-- add header -->
+    <header id="header">
+      <h1>TrainerTime Hub</h1>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+        <li>
+          <a href="/faq">FAQ</a>
+        </li>
+      </ul>
+    </header>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
